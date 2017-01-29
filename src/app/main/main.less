@@ -1,3 +1,85 @@
-body {
+html,body {
     background: #f2efe8;
+    font-family:"Helvetica Neue";
+    height: 100%;
 }
+.box-container {
+    width:calc(~"100% - 250px");
+
+    .navbar-inverse {
+    background: #e0dfd6;
+    border-bottom: 1px solid #fff;
+    .navbar-brand {
+        height: 60px;
+        background: #f2efe9;
+         min-width: 100px;
+         padding-left: 35px;
+         img{
+                width: 30px;
+            }
+    }
+
+    .navbar-nav {
+        li {
+            a {
+                    padding: 0px;
+                    height: 58px;
+                    min-width: 90px;
+                    line-height: 57px;
+                    text-align: center;
+                    font-size: 23px;
+            }
+            
+        }
+        .active {
+            a {
+                background: #47b59a;
+                &:hover {
+                background-color: #076d65;
+            }
+            }
+            
+        }
+    }
+    .navbar-right {
+        margin-right: 10px;
+        input {
+            background: 0 0;
+            border: 0;
+            border-bottom: 1px #c2bfba solid;
+            font-size: 14px;
+            margin-top:20px;
+            width: 240px;
+            padding: 5px;
+            &:focus {
+                border-color: #3e3e40;
+                 outline-width: 0;
+            }
+        }
+        .glyphicon {
+            position: absolute;
+            top: 28px;
+            right: 4px;
+            font-size: 16px;
+            color: #c2bfba;
+        }
+    }
+}
+
+}
+.chat-container {
+    width: 250px;
+    .chat-div{
+    width: 250px;
+    height: 100%;
+    background: #444550;
+    overflow-y: scroll;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 9999;
+}
+}
+
+
+/////////////////////////////////////////////////////
