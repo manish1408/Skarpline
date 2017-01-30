@@ -70,15 +70,33 @@ html,body {
 .chat-container {
     width: 250px;
     .chat-div{
-    width: 250px;
-    height: 100%;
-    background: #444550;
-    overflow-y: scroll;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    z-index: 9999;
-}
+        width: 250px;
+        height: 100%;
+        background: #444550;
+        overflow-y: scroll;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 9999;
+        .logged-in{
+            height: 60px;
+            background: #4e4f5a;
+            color: #fff;
+        }
+        img{
+              &.avatar {
+                width: 30px;
+                border-radius: 50%;
+                margin: 15px 15px 15px 20px;
+            }
+        }
+        .glyphicon-bell {
+            position: absolute;
+            top:20px;
+            font-size: 20px;
+            right: 20px;
+        }
+    }
 }
 
 
