@@ -95,9 +95,7 @@ html,body {
         }
         }
         .online-users {
-            .avatar {
-                border :solid 2px green;
-            }
+            
             .name{
                color: #fff;
                 width: 166px;
@@ -106,10 +104,16 @@ html,body {
                 line-height: 12px;
             }
             span {
-                    color: rgb(71, 181, 154);
+                  
                 display: block;
-                font-size: 12px;
+                font-size: 11px;
                 text-transform: lowercase;
+                &.green{
+                    color: rgb(71, 181, 154);
+                }
+                &.normal {
+                  color: rgba(255, 255, 255, 0.498039);
+                }
                
             }
             img{
@@ -118,7 +122,24 @@ html,body {
                 border-radius: 50%;
                 margin: 10px 10px 10px 20px;
             }
+            &.green {
+                border :solid 2px rgb(71, 181, 154);;
+            }
+            &.yellow {
+                border :solid 2px yellow;;
+            }
+            &.red {
+                border :solid 2px red;;
+            }
+            &.white {
+                border :solid 2px #fff;;
+            }
         }
+         &.external {
+             .name{
+                 padding-top:20px;
+             }
+         }
         }
         
         .glyphicon-bell {
