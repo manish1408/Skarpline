@@ -275,14 +275,30 @@ html,body {
 .app-modal-window {
     .modal-content {
         border-radius: 0px;
+        background-color: transparent !important; 
+        box-shadow: none;
+    }
+    .form-control {
+       background-color: rgba(242, 239, 232, 0.86) !important;
+       border: 0px;
+        border-radius: 0px;
+    }
+    .ta-bind {
+        width: 50%;
+        margin: 30px auto;
+        padding: 20px;
+        background: #fff;
+        border: solid 1px #ccc;
     }
     .modal-dialog {
     width: 100%;
     z-index: 9999;
-    padding: 30px;
+    padding: 0px;
+    margin:0px;
     }
     .btn-toolbar {
          margin-left: 0px; 
+        padding-left: 33% !important;
     }
     .ta-toolbar {
         padding: 10px;
@@ -300,3 +316,6 @@ html,body {
     }
 }
 
+.modal-backdrop {
+     background: #000;
+}
