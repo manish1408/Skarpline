@@ -7,6 +7,109 @@ html,body {
     font-family: 'Open Sans', sans-serif;
 }
 .box-container {
+    .folder-container {
+        padding: 40px;
+        display: block;
+        overflow: hidden;
+    }
+    .text-folder {
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px 0px;
+        cursor: pointer;
+        width: 234px;
+        height: 184px;
+        border-radius: 3px;
+        border: 0;
+        overflow: hidden;
+        float: left;
+        margin: 13px;
+        position: relative;
+        &.bg-1 {
+         background: #fff;
+        }
+        &.bg-2 {
+            background: rgba(249, 186, 39, 0.23);
+        }
+         .bottom-footer {
+            display: block;
+            position: absolute;
+            width: 100%;
+            bottom: 0px;
+            padding: 5px;
+            img {
+                width: 20px;
+            }
+            span {
+                font-size: 9px;
+                color: rgba(0, 0, 0, 0.41);
+                line-height: 20px;
+            }
+        }
+    }
+    .folder {
+        background: #a6c0ba;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px 0px;
+        cursor: pointer;
+        width: 234px;
+        height: 184px;
+        border-radius: 3px;
+        border: 0;
+        overflow: hidden;
+        float: left;
+        margin: 13px;
+        position: relative;
+        .bg {
+            background-repeat: no-repeat;
+            height: 28px;
+            position: relative;
+            top: 1px;
+            border-top-left-radius: 3px;
+            width: 110px;
+            &.first {
+                background-image: url(https://app.skarpline.com/Images/patterns/pc_06.png);
+            }
+            &.second {
+                background-image: url(https://app.skarpline.com/Images/patterns/pc_07.png);
+            }
+            &.third {
+                background-image: url(https://app.skarpline.com/Images/patterns/pc_08.png);
+            }
+            &.fourth {
+                background-image: url(https://app.skarpline.com/Images/patterns/pc_09.png);
+            }
+            &.fifth {
+                background-image: url(https://app.skarpline.com/Images/patterns/pc_05.png);
+            }
+        }
+        .cut{
+           height: 44px;
+            width: 28px;
+            background: #a6c0ba;
+            transform: rotate(40deg);
+            z-index: 9999;
+            position: absolute;
+            right: -14px;
+        }
+        .bottom-footer {
+            display: block;
+            position: absolute;
+            width: 100%;
+            bottom: 0px;
+            padding: 5px;
+            img {
+                width: 20px;
+            }
+            span {
+                font-size: 9px;
+                color: rgba(0, 0, 0, 0.41);
+                line-height: 20px;
+            }
+        }
+        .center-text {
+                color: #424c4b;
+                text-align: center;
+                margin-top: 23%;
+        }
+    }
     width:calc(~"100% - 250px");
 
     .navbar-inverse {
