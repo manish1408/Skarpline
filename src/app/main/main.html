@@ -1,3 +1,5 @@
+
+
 <div class="pull-left box-container">
 
   <nav class="navbar navbar-static-top navbar-inverse">
@@ -84,48 +86,22 @@
          </span>
       </div>
     </div>
-    <div class="text-folder bg-1">
+
+    <div class="text-folder" ng-click="open(box);" ng-class="box.boxClass" ng-repeat="box in boxes">
       <div class="text-container">
         <div class="header-text">
-          SHOP LIST
+          {{box.header}}
         </div>
-        <div class="explain-text"> Lorem ipsum doler amet Lorem ipsum doler amet Lorem ipsum doler amet Lorem ipsum doler amet </div>
+        <div class="explain-text"> {{box.boxContent}}</div>
       </div>
       <div class="bottom-footer">
-        <span class="item pull-left">a few seconds ago</span>
+        <span class="item pull-left">{{box.updatedOn}}</span>
         <span class="item pull-right">
            <img src="assets/images/thumb_no_photo_17.png">
          </span>
       </div>
     </div>
-    <div class="text-folder bg-2">
-      <div class="text-container">
-        <div class="header-text">
-          SHOP LIST
-        </div>
-        <div class="explain-text"> Lorem ipsum doler amet Lorem ipsum doler amet Lorem ipsum doler amet Lorem ipsum doler amet </div>
-      </div>
-      <div class="bottom-footer">
-        <span class="item pull-left">a few seconds ago</span>
-        <span class="item pull-right">
-           <img src="assets/images/thumb_no_photo_17.png">
-         </span>
-      </div>
-    </div>
-    <div class="text-folder bg-1">
-      <div class="text-container">
-        <div class="header-text">
-          SHOP LIST
-        </div>
-        <div class="explain-text"> Lorem ipsum doler amet Lorem ipsum doler amet Lorem ipsum doler amet Lorem ipsum doler amet </div>
-      </div>
-      <div class="bottom-footer">
-        <span class="item pull-left">a few seconds ago</span>
-        <span class="item pull-right">
-           <img src="assets/images/thumb_no_photo_17.png">
-         </span>
-      </div>
-    </div>
+
     <div class="background-folder">
       <div class="bottom-footer">
         Some Dummy Text

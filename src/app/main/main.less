@@ -29,7 +29,11 @@ html,body {
             margin-left: 20px;
             height: 152px;            
             .explain-text {
-                font-size: 10px;
+                    font-size: 10px;
+                    height: 100px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: pre-line;
             }
             .header-text{
                 text-align: center;
@@ -359,14 +363,13 @@ html,body {
         }
     }
 }
-.close-button{
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    color: #fff;
-    font-size: 20px;
-}
 
 .modal-backdrop {
      background: #000;
+}
+.close-button {
+    position: absolute;
+    top:5px;
+    right: 20px;
+    font-size: 24px;
 }
