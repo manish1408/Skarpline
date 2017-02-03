@@ -13,21 +13,37 @@ html,body {
         overflow: hidden;
     }
     .text-folder {
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px 0px;
-        cursor: pointer;
-        width: 234px;
-        height: 184px;
-        border-radius: 3px;
-        border: 0;
-        overflow: hidden;
-        float: left;
-        margin: 13px;
-        position: relative;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px 0px;
+            cursor: pointer;
+            width: 234px;
+            height: 184px;
+            border-radius: 3px;
+            border: 0;
+            overflow: hidden;
+            float: left;
+            margin: 13px;
+            position: relative;
+        .text-container {
+            border-left: solid 2px darkred;
+            padding: 10px;
+            margin-left: 20px;
+            height: 152px;            
+            .explain-text {
+                font-size: 10px;
+            }
+            .header-text{
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 12px;
+                color: #000;
+                padding: 10px;
+            }
+        }
         &.bg-1 {
          background: #fff;
         }
         &.bg-2 {
-            background: rgba(249, 186, 39, 0.23);
+            background: rgba(249, 186, 39, 0.32);
         }
          .bottom-footer {
             display: block;
@@ -35,6 +51,7 @@ html,body {
             width: 100%;
             bottom: 0px;
             padding: 5px;
+            border-top: solid 2px #ccc;
             img {
                 width: 20px;
             }
@@ -45,8 +62,7 @@ html,body {
             }
         }
     }
-    .folder {
-        background: #a6c0ba;
+    .background-folder {
         box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px 0px;
         cursor: pointer;
         width: 234px;
@@ -57,6 +73,31 @@ html,body {
         float: left;
         margin: 13px;
         position: relative;
+        background: url('http://lorempixel.com/250/180/technics/');
+         .bottom-footer {
+            display: block;
+            position: absolute;
+            width: 100%;
+            bottom: 0px;
+            padding: 15px;
+            background: rgba(41,44,47,.7);
+            font-size: 14px;
+            color: #fff;
+            text-align: center;
+        }
+    }
+    .folder {
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px 0px;
+        cursor: pointer;
+        width: 234px;
+        height: 184px;
+        border-radius: 3px;
+        border: 0;
+        overflow: hidden;
+        float: left;
+        margin: 13px;
+        position: relative;
+        background: #a6c0ba;
         .bg {
             background-repeat: no-repeat;
             height: 28px;
@@ -179,6 +220,7 @@ html,body {
         height: 100%;
         background: #444550;
         overflow-y: scroll;
+        position: absolute;
         top: 0px;
         right: 0px;
         z-index: 9999;
@@ -267,6 +309,9 @@ html,body {
         }
     }
 }
+
+
+/////////////////////////////////////////////////////
 
 
 /////////////////////////////////////////////////////
