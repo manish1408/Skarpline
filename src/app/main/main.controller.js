@@ -28,6 +28,7 @@
         "boxId": "3",
         "header": "SHOP LIST",
         "boxContent": 'ed in diam sit amet elit auctor luctus. Aenean est arcu, aliquam a leo condimentum, condimentum commodo justo. Integer scelerisque tempor ullamcorper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In molestie magna dolor, id vestibulum magna placerat non.',
+        "updatedOn": "a few seconds ago",
         "boxClass": "bg-1"
       }
     ];
