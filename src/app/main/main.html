@@ -87,7 +87,7 @@
       </div>
     </div>
 
-    <div class="text-folder" ng-click="open(box);" ng-class="box.boxClass" ng-repeat="box in boxes">
+    <div class="text-folder" ng-click="open(box);" ng-class="box.boxClass" ng-repeat="box in boxes" >
       <div class="text-container">
         <div class="header-text">
           {{box.header}}
@@ -95,29 +95,33 @@
         <div class="explain-text"> {{box.boxContent}}</div>
       </div>
       <div class="bottom-footer">
-        <span class="item pull-left">{{box.updatedOn}}</span>
-        <span class="item pull-right">
+        <span class="item pull-left box-details">{{box.updatedOn}}</span>
+        <span class="item pull-right avatar">
            <img src="assets/images/avatar-2.jpg">
          </span>
       </div>
     </div>
 
-    <div class="background-folder">
+    <div class="background-folder bg-1">
+      <div class="bg-cover"></div>
+      <div class="bottom-footer">
+        Some Dummy Text
+      </div>
+    </div>
+    <div class="background-folder bg-2">
+      <div class="bg-cover"></div>
+      <div class="bottom-footer">
+        Some Dummy Text
+      </div>
+    </div>
+    <div class="background-folder bg-3">
+      <div class="bg-cover"></div>
       <div class="bottom-footer">
         Some Dummy Text
       </div>
     </div>
     <div class="background-folder">
-      <div class="bottom-footer">
-        Some Dummy Text
-      </div>
-    </div>
-    <div class="background-folder">
-      <div class="bottom-footer">
-        Some Dummy Text
-      </div>
-    </div>
-    <div class="background-folder">
+      <div class="bg-cover"></div>
       <div class="bottom-footer">
         Some Dummy Text
       </div>

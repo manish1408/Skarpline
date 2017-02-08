@@ -23,6 +23,9 @@ html,body {
             float: left;
             margin: 13px;
             position: relative;
+            &:hover {
+                box-shadow: 0 0 12px rgba(0,0,0,.4);
+            }
         .text-container {
             border-left: solid 2px darkred;
             padding: 10px;
@@ -57,17 +60,26 @@ html,body {
             position: absolute;
             width: 100%;
             bottom: 0px;
-            padding:3px 3px 3px 25px;;
-            border-top: solid 2px #ccc;
-            img {
-                width: 25px;
-                border-radius: 3px;
-            }
-            span {
+            padding:0px 3px 3px 0px;;
+            .box-details {
+                 padding-top: 3px;
+                 border-top: solid 2px #ccc;
+                 padding-left: 25px;
+                 width: 220px;
                 font-size: 9px;
                 color: rgba(0, 0, 0, 0.8);
                 line-height: 25px;
             }
+            .avatar {
+                    padding-top: 3px;
+                border-top: solid 2px #e34f65;
+                width: 27px;
+                img {
+                width: 25px;
+                border-radius: 3px;
+                }
+            }
+            
         }
     }
     .background-folder {
@@ -81,7 +93,29 @@ html,body {
         float: left;
         margin: 13px;
         position: relative;
-        background: url('http://lorempixel.com/250/180/technics/');
+         &:hover {
+                box-shadow: 0 0 12px rgba(0,0,0,.4);
+            }
+        .bg-cover {
+             background-color: rgba(0, 0, 0, 0.2);
+            position: absolute;
+            width: 100%;
+            display: block;
+            z-index: 99;
+            height: 250px;
+        }
+        &.bg-1 {
+            background: url('../../assets/images/back-1.jpg');
+            background-size: cover;
+        }
+        &.bg-2 {
+            background: url('../../assets/images/bg-2.jpg');
+            background-size: cover;
+        }
+        &.bg-3 {
+            background: url('../../assets/images/bg-3.jpg');
+            background-size: cover;
+        }
          .bottom-footer {
             display: block;
             position: absolute;
@@ -106,6 +140,9 @@ html,body {
         margin: 13px;
         position: relative;
         background: #a6c0ba;
+         &:hover {
+                box-shadow: 0 0 12px rgba(0,0,0,.4);
+            }
         .bg {
             background-repeat: no-repeat;
             height: 28px;
